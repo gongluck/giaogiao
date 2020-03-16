@@ -2,14 +2,14 @@
  * @Author: gongluck
  * @Date: 2020-03-15 17:16:35
  * @Last Modified by: gongluck
- * @Last Modified time: 2020-03-15 19:31:15
+ * @Last Modified time: 2020-03-16 19:41:08
  */
 
 package config
 
 import (
-	"giaogiao/util"
 	"fmt"
+	"giaogiao/util"
 
 	"gopkg.in/ini.v1"
 )

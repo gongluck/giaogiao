@@ -11,11 +11,18 @@ import (
 	"log"
 
 	"giaogiao/config"
-	_ "giaogiao/model"
+	"giaogiao/model"
+	"giaogiao/server"
 )
 
 func main() {
 	log.Println("begin to start ...")
 	log.Println(config.AddressConfig)
 	log.Println(config.MysqlConfig)
+
+	s := server.CreateServer()
+	s.Run(config.AddressConfig)
+
+	log.Println("begin to end ...")
+	model.Uninit()
 }
